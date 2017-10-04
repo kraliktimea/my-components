@@ -1,0 +1,1 @@
+a simple footer code for general purpose
