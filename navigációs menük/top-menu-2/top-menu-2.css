@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  color: #ffffff;
+  padding: 8px 16px;
+}
+body{
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+}
+p{
+  margin: 15px;
+}
+nav{
+  text-align: center;
+  background-color:#191919;
+  padding:15px;
+}
+nav a:hover{
+  color:#e0e0e0;
+  transition: color .15s ease-in-out;
+}
+#sign-up{
+  border:solid 1px hsla(0,0%,100%,.2);
+  border-radius: 9999px;
+}
+#sign-up:hover{
+  background-color:#ffffff;
+  color:#000000;
+  transition: background-color .15s ease-in-out;
+}
+@media (min-width: 768px){
+  #sign-up,#sign-in,#about{
+    float:right;  
+  }
+  #home{
+    float:left;
+  }
+  nav{
+    height:60px;
+    position: fixed;
+    width:100%;
+    top:0;
+    left:0;
+  }
+  nav::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+  div{
+    margin: 90px auto;
+    width:65%;
+  }
